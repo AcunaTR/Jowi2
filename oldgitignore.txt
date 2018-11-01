@@ -1,0 +1,35 @@
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+#eclipse files
+*.idea
+*.metadata
+*.settings/
+*.classpath
+*.project
+
+
+# Misc
+*.swp
+*.vs
+release.properties
+pom.xml.releaseBackup
+pom.xml.tag
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+build.xml
+nbproject
+build
+/dist/
+/bin/
+/Janra.Jowi/bin/
+/target/
