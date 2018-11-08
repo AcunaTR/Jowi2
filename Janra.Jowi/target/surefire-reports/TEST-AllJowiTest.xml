@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="109" failures="0" name="AllJowiTest" time="0.749" errors="0" skipped="0">
+<testsuite tests="109" failures="0" name="AllJowiTest" time="0.75" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk1.8.0_161.jdk/Contents/Home/jre/lib"/>
@@ -64,62 +64,62 @@
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="Network.IncomingRequestHandlerErrorTests" name="DoesNotTerminatesOnException" time="0.111"/>
-  <testcase classname="Network.Readers.ChannelReaderTests" name="ThrowsWhenLineEndingIncorrect" time="0.001"/>
-  <testcase classname="Network.Readers.ChannelReaderTests" name="CorrectlyReadsAllData" time="0"/>
+  <testcase classname="Network.IncomingRequestHandlerErrorTests" name="DoesNotTerminatesOnException" time="0.115"/>
+  <testcase classname="Network.Readers.ChannelReaderTests" name="ThrowsWhenLineEndingIncorrect" time="0"/>
+  <testcase classname="Network.Readers.ChannelReaderTests" name="CorrectlyReadsAllData" time="0.001"/>
   <testcase classname="Network.Readers.ChannelReaderTests" name="CorrectlyReadsLine" time="0"/>
-  <testcase classname="Network.Readers.ChannelReaderTests" name="WaitsForSlowData" time="0.001"/>
+  <testcase classname="Network.Readers.ChannelReaderTests" name="WaitsForSlowData" time="0"/>
   <testcase classname="Network.Readers.ChannelReaderTests" name="ThrowsWhenEndOfStreamBeforeAllExpectedData" time="0"/>
   <testcase classname="Network.Readers.ChannelReaderTests" name="TimesOutIfNoMoreData" time="0"/>
   <testcase classname="Network.Readers.ChunkedReaderTests" name="ReadsChunkIncludingLineEnds" time="0.001"/>
   <testcase classname="Network.Readers.ChunkedReaderTests" name="ReadsUntilEmptyChunk" time="0"/>
-  <testcase classname="Network.Readers.ChunkedReaderTests" name="ReadsLengthWithoutExtensions" time="0"/>
-  <testcase classname="Network.Readers.ChunkedReaderTests" name="ThrowsIfLengthBiggerThanMaxInteger" time="0.001"/>
-  <testcase classname="Network.Readers.ChunkedReaderTests" name="ReadsLengthWithExtensions" time="0"/>
+  <testcase classname="Network.Readers.ChunkedReaderTests" name="ReadsLengthWithoutExtensions" time="0.001"/>
+  <testcase classname="Network.Readers.ChunkedReaderTests" name="ThrowsIfLengthBiggerThanMaxInteger" time="0"/>
+  <testcase classname="Network.Readers.ChunkedReaderTests" name="ReadsLengthWithExtensions" time="0.001"/>
   <testcase classname="Network.Readers.GzipReaderTests" name="UnzipsData" time="0.009"/>
-  <testcase classname="Network.IncomingRequestHandlerErrorTests" name="DoesNotTerminatesOnException" time="0.104"/>
+  <testcase classname="Network.IncomingRequestHandlerErrorTests" name="DoesNotTerminatesOnException" time="0.102"/>
   <testcase classname="Network.RequestHandlerTests" name="SignalsEndOfThread" time="0.01"/>
   <testcase classname="Network.RequestHandlerTests" name="DoesNotAcceptInValidRequest" time="0"/>
-  <testcase classname="Network.RequestHandlerTests" name="Returns500OnException" time="0.018"/>
+  <testcase classname="Network.RequestHandlerTests" name="Returns500OnException" time="0.019"/>
   <testcase classname="Network.RequestHandlerTests" name="AcceptsValidRequest" time="0"/>
   <testcase classname="Network.RequestHandlerTests" name="CancelsKeyIfNotReadable" time="0"/>
   <testcase classname="Network.RequestHandlerTests" name="RegistersKeyWithSelector" time="0"/>
   <testcase classname="Network.SocketServerTests" name="HandlesAllPendingRequests" time="0"/>
   <testcase classname="Network.SocketServerTests" name="ThrowsExceptionIfCalledWhenClosed" time="0"/>
   <testcase classname="Network.SocketServerTests" name="BoundToCorrectPortAndConfigured" time="0"/>
-  <testcase classname="Pipeline.Configuration.PipelineBuilderTests" name="multiplePipelinesMultipleMiddleware" time="0.042"/>
+  <testcase classname="Pipeline.Configuration.PipelineBuilderTests" name="multiplePipelinesMultipleMiddleware" time="0.045"/>
   <testcase classname="Pipeline.Configuration.PipelineBuilderTests" name="SimpleSingleMiddlewarePipeline" time="0"/>
   <testcase classname="Pipeline.Configuration.PipelineBuilderTests" name="singlePipelineMultipleMiddleware" time="0"/>
-  <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="ThrowsOnNullMiddleware" time="0.001"/>
+  <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="ThrowsOnNullMiddleware" time="0"/>
   <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="ThrowsOnNullPath" time="0"/>
   <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="MultipleMiddlewareOnDifferentRoutes" time="0"/>
   <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="CorrectlyOrdersMiddleware" time="0"/>
   <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="DoesNotMixRoutes" time="0"/>
-  <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="ThrowsOnEmptyPath" time="0.001"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="CharsetExtractedFromContentTypeHeader" time="0.008"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="BadRequestIfMissingHostHeader" time="0"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="BadRequestIfMoreThanOneHostHeader" time="0.001"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="GoodHostContainsPortNumber" time="0"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns414ForMaxUriLengthExceededWithHost" time="0.001"/>
+  <testcase classname="Pipeline.Configuration.PipelineConfigurationTests" name="ThrowsOnEmptyPath" time="0"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="CharsetExtractedFromContentTypeHeader" time="0.009"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="BadRequestIfMissingHostHeader" time="0.001"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="BadRequestIfMoreThanOneHostHeader" time="0"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="GoodHostContainsPortNumber" time="0.001"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns414ForMaxUriLengthExceededWithHost" time="0"/>
   <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns414ForMaxUriLengthExceededCombined" time="0"/>
   <testcase classname="Protocol.Builders.RequestBuilderTests" name="ChunkedEncodingProcessed" time="0.001"/>
   <testcase classname="Protocol.Builders.RequestBuilderTests" name="HostHeaderNotInHeadersList" time="0.001"/>
   <testcase classname="Protocol.Builders.RequestBuilderTests" name="ChunkedMustBeLastEncoding" time="0"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="BadRequestIfContentLengthNaN" time="0.001"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns501ForUnrecognisedEncodingWithChunked" time="0"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="BadRequestIfContentLengthNaN" time="0"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns501ForUnrecognisedEncodingWithChunked" time="0.001"/>
   <testcase classname="Protocol.Builders.RequestBuilderTests" name="GoodRequestOnGetRequest" time="0"/>
   <testcase classname="Protocol.Builders.RequestBuilderTests" name="ContentLengthIgnoredForTransferEncoding" time="0"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="AddsHostToContext" time="0.001"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns400ForContentRangeAndPut" time="0"/>
-  <testcase classname="Protocol.Builders.RequestBuilderTests" name="RequestBodyAddedToRequest" time="0.002"/>
-  <testcase classname="Protocol.Builders.ResponseBuilderTests" name="ReturnsServerResponseBody" time="0.003"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="AddsHostToContext" time="0"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="Returns400ForContentRangeAndPut" time="0.001"/>
+  <testcase classname="Protocol.Builders.RequestBuilderTests" name="RequestBodyAddedToRequest" time="0.001"/>
+  <testcase classname="Protocol.Builders.ResponseBuilderTests" name="ReturnsServerResponseBody" time="0.005"/>
   <testcase classname="Protocol.Builders.ResponseBuilderTests" name="AllLineEndingsAreSlashrSlashn" time="0"/>
   <testcase classname="Protocol.Builders.ResponseBuilderTests" name="ReturnsServerHeaderDetails" time="0"/>
   <testcase classname="Protocol.Builders.ResponseBuilderTests" name="DoesNotReturnBodyFor304Status" time="0"/>
-  <testcase classname="Protocol.Builders.ResponseBuilderTests" name="DoesNotReturnBodyForInformationStatus" time="0"/>
+  <testcase classname="Protocol.Builders.ResponseBuilderTests" name="DoesNotReturnBodyForInformationStatus" time="0.001"/>
   <testcase classname="Protocol.Builders.ResponseBuilderTests" name="ReturnsCorrectStatusDetails" time="0"/>
   <testcase classname="Protocol.Builders.ResponseBuilderTests" name="DoesNotReturnBodyFor204Status" time="0"/>
-  <testcase classname="Protocol.Models.ContentTypeTests" name="DoesNotAllowWhiteSpaceAfterEquals" time="0.001"/>
+  <testcase classname="Protocol.Models.ContentTypeTests" name="DoesNotAllowWhiteSpaceAfterEquals" time="0"/>
   <testcase classname="Protocol.Models.ContentTypeTests" name="ExtractMediaTypeOnly" time="0"/>
   <testcase classname="Protocol.Models.ContentTypeTests" name="ExtractMediaTypeAndCharset" time="0"/>
   <testcase classname="Protocol.Models.ContentTypeTests" name="AcceptsQuotedCharset" time="0"/>
@@ -127,21 +127,21 @@
   <testcase classname="Protocol.Models.ContentTypeTests" name="CharsetNameIsCaseInsensitive" time="0"/>
   <testcase classname="Protocol.Models.ContentTypeTests" name="DoesNotAllowWhiteSpaceAfterCharset" time="0"/>
   <testcase classname="Protocol.Models.ContentTypeTests" name="RejectsInvalidCharsetsyntax" time="0"/>
-  <testcase classname="Protocol.Models.ContextTests" name="NoBodyOrHeadersForConnectRequest" time="0.001"/>
-  <testcase classname="Protocol.Models.ContextTests" name="NoBodyIfButWithHeadersForHeadRequest" time="0"/>
+  <testcase classname="Protocol.Models.ContextTests" name="NoBodyOrHeadersForConnectRequest" time="0"/>
+  <testcase classname="Protocol.Models.ContextTests" name="NoBodyIfButWithHeadersForHeadRequest" time="0.001"/>
   <testcase classname="Protocol.Models.HeadersTests" name="CommaSeparatedHeaderValueIsAccessible" time="0"/>
   <testcase classname="Protocol.Models.HeadersTests" name="DuplicateHeaderIsAccessible" time="0"/>
   <testcase classname="Protocol.Models.HeadersTests" name="CopyConstructorDoesNotKeepReferences" time="0"/>
   <testcase classname="Protocol.Models.HeadersTests" name="HeaderCanBeRemoved" time="0"/>
   <testcase classname="Protocol.Models.HeadersTests" name="HeaderNameIsCaseInsensitive" time="0"/>
   <testcase classname="Protocol.Models.HeadersTests" name="OnlyOneContentHeaderType" time="0"/>
-  <testcase classname="Protocol.Models.HeaderTests" name="rawReturnsSingleValue" time="0.001"/>
+  <testcase classname="Protocol.Models.HeaderTests" name="rawReturnsSingleValue" time="0"/>
   <testcase classname="Protocol.Models.HeaderTests" name="rawReturnsCommaSeparatedList" time="0"/>
   <testcase classname="Protocol.Models.HeaderTests" name="CommaSeparatedvalueCorrectlyParsed" time="0"/>
   <testcase classname="Protocol.Models.HeaderTests" name="singleValueCorrectlyParsed" time="0"/>
   <testcase classname="Protocol.Models.HttpRequestTests" name="CopyConstructorDoesNotKeepReferences" time="0"/>
-  <testcase classname="Protocol.Models.HttpRequestTests" name="ThrowsIfInvalidHostUri" time="0"/>
-  <testcase classname="Protocol.Models.HttpStatusTests" name="isInformationFalseFor2xx3xx4xxAnd5xx" time="0.001"/>
+  <testcase classname="Protocol.Models.HttpRequestTests" name="ThrowsIfInvalidHostUri" time="0.001"/>
+  <testcase classname="Protocol.Models.HttpStatusTests" name="isInformationFalseFor2xx3xx4xxAnd5xx" time="0"/>
   <testcase classname="Protocol.Models.HttpStatusTests" name="IsInformationalTrueFor1xx" time="0"/>
   <testcase classname="Protocol.Parsers.ParserTests" name="CorrectlyExtractsRequestLine" time="0"/>
   <testcase classname="Protocol.Parsers.ParserTests" name="PassesCharsetToRequest" time="0"/>
@@ -151,26 +151,26 @@
   <testcase classname="Protocol.Parsers.ParserTests" name="CorrectlyRejectsBadHeader3" time="0"/>
   <testcase classname="Protocol.Parsers.ParserTests" name="CorrectlyRejectsBadRequestLine" time="0"/>
   <testcase classname="Protocol.Parsers.ParserTests" name="CorrectlyRejectsUnsupportedVersion" time="0"/>
-  <testcase classname="Protocol.Processing.EncodingReadersTests" name="ThrowsIfNoReader" time="0.002"/>
+  <testcase classname="Protocol.Processing.EncodingReadersTests" name="ThrowsIfNoReader" time="0.003"/>
   <testcase classname="Protocol.Processing.EncodingReadersTests" name="CallsReader" time="0"/>
-  <testcase classname="Protocol.Processing.EncodingReadersTests" name="CanCallMultipleReaders" time="0.001"/>
+  <testcase classname="Protocol.Processing.EncodingReadersTests" name="CanCallMultipleReaders" time="0"/>
   <testcase classname="Protocol.Processing.PipelineModuleTests" name="InvokesMiddlewareStack" time="0"/>
   <testcase classname="Protocol.Processing.PipelineModuleTests" name="InvokesSingleMiddleware" time="0"/>
-  <testcase classname="Protocol.Processing.PipelineModuleTests" name="DoesNotInvokeMiddlewareStackOnReturnFalse" time="0.001"/>
+  <testcase classname="Protocol.Processing.PipelineModuleTests" name="DoesNotInvokeMiddlewareStackOnReturnFalse" time="0"/>
   <testcase classname="Protocol.Processing.RequestContextTests" name="ResponseHeaderIsAdded" time="0"/>
-  <testcase classname="Protocol.Processing.RequestContextTests" name="ResponseBodyIsUpDated" time="0"/>
+  <testcase classname="Protocol.Processing.RequestContextTests" name="ResponseBodyIsUpDated" time="0.001"/>
   <testcase classname="Protocol.Processing.RequestContextTests" name="PropertiesAreUpDated" time="0"/>
   <testcase classname="Protocol.Processing.RequestContextTests" name="ResponseStatusIsUpDated" time="0"/>
   <testcase classname="Protocol.Processing.RequestContextTests" name="PropertiesAreNotInResponse" time="0"/>
   <testcase classname="Protocol.Processing.RequestMarshallerTests" name="ReturnsNullforNoPipeline" time="0.002"/>
   <testcase classname="Protocol.Processing.RequestMarshallerTests" name="ThowsExceptionForDuplicatePaths" time="0"/>
   <testcase classname="Protocol.Processing.RequestMarshallerTests" name="SelectsCorrectPipelineForPath" time="0"/>
-  <testcase classname="Protocol.Processing.RequestProcessorTests" name="returns404IfNoPipeline" time="0.001"/>
+  <testcase classname="Protocol.Processing.RequestProcessorTests" name="returns404IfNoPipeline" time="0"/>
   <testcase classname="Protocol.Processing.RequestProcessorTests" name="returnsResponseFromPipeline" time="0.001"/>
-  <testcase classname="Protocol.Processing.RequestProcessorTests" name="returns500IfPipelineThrowsException" time="0.002"/>
-  <testcase classname="Protocol.Processing.ResponderTests" name="ReCallsSocketUntilAllDataWritten" time="0.416"/>
+  <testcase classname="Protocol.Processing.RequestProcessorTests" name="returns500IfPipelineThrowsException" time="0.001"/>
+  <testcase classname="Protocol.Processing.ResponderTests" name="ReCallsSocketUntilAllDataWritten" time="0.413"/>
   <testcase classname="Protocol.Processing.ResponderTests" name="DoesNotReCallSocketIfAllDataWritten" time="0"/>
-  <testcase classname="Protocol.Processing.TransferEncodingProcessorTests" name="CallsChunkedWithChannel" time="0"/>
+  <testcase classname="Protocol.Processing.TransferEncodingProcessorTests" name="CallsChunkedWithChannel" time="0.001"/>
   <testcase classname="Protocol.Processing.TransferEncodingProcessorTests" name="callsSingleDecoder" time="0"/>
   <testcase classname="Protocol.Processing.TransferEncodingProcessorTests" name="callsMultipleDecodersInReverseOrder" time="0"/>
 </testsuite>
