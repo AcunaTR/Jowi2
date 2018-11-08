@@ -51,8 +51,8 @@ public class CronCurl implements IPipelineMiddleware {
 				// print result
 				System.out.println(response.toString());
 			} else {
-				output = "GET request not worked";
-				System.out.println("GET request not worked");
+				output = "GET request not worked, this is actually working";
+				System.out.println("GET request not worked, this is actually working");
 			}
 			
 			
